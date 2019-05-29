@@ -1,0 +1,26 @@
+{
+  "name": "testing-arrivy/testing-arrivy-php",
+  "type": "library",
+  "description": "Arrivy API client built testing-arrivy-php",
+  "keywords": ["arrivy", "arrivy.com", "api", "testing-arrivy-php"],
+  "homepage": "https://arrivy.com/",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Arrivy Platform Team",
+      "homepage": "https://arrivy.com/",
+      "email": "info@arrivy.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "ArrivyIntegration\\": ["src"]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ArrivyIntegration\\Test\\": ["test"]
+    }
+  }
+}
