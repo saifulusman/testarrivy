@@ -6,7 +6,7 @@
   "homepage": "https://arrivy.com/",
   "license": "Apache-2.0",
   "version": 0.1,
-  "minimum-stability": "stable",
+  "minimum-stability": "alpha",
   "authors": [
     {
       "name": "Arrivy Platform Team",
@@ -18,11 +18,6 @@
   "autoload": {
     "psr-4": {
       "ArrivyIntegration\\": ["src"]
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "ArrivyIntegration\\Test\\": ["test"]
     }
   }
 }
