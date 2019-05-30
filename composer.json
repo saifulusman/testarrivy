@@ -5,6 +5,7 @@
   "keywords": ["arrivy", "arrivy.com", "api", "testing-arrivy-php"],
   "homepage": "https://arrivy.com/",
   "license": "Apache-2.0",
+  "version": 0.1,
   "authors": [
     {
       "name": "Arrivy Platform Team",
