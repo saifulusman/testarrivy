@@ -19,5 +19,11 @@
     "psr-4": {
       "ArrivyIntegration\\": ["src"]
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ArrivyIntegration\\": ["src"],
+      "ArrivyIntegration\\Test\\": ["test"]
+    }
   }
 }
