@@ -6,6 +6,7 @@
   "homepage": "https://arrivy.com/",
   "license": "Apache-2.0",
   "version": 0.1,
+  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Arrivy Platform Team",
