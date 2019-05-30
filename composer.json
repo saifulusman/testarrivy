@@ -17,13 +17,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "ArrivyIntegration\\": ["src"]
+      "testing-arrivy-php\\": ["src"]
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "ArrivyIntegration\\": ["src"],
-      "ArrivyIntegration\\Test\\": ["test"]
+      "testing-arrivy-php\\": ["src"]
     }
   }
 }
