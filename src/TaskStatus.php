@@ -1,6 +1,7 @@
 <?php
 
 require_once('ArrivyClient.php');
+
 class TaskStatus
 {
     /**
@@ -12,7 +13,7 @@ class TaskStatus
      * TaskStatus constructor.
      * @param $client
      */
-    public  function __construct($client)
+    public function __construct($client)
     {
         $this->client = $client;
     }
@@ -21,9 +22,10 @@ class TaskStatus
      * @param $task_id
      * @return json array
      */
-    public function GetList($task_id){
+    public function GetList($task_id)
+    {
         // call callAPI  method from ArrivyClient class
-        $response = $this->client->callAPI('GET', ArrivyClient::TASK_ENTITY_URL . "/" . $task_id.ArrivyClient::TASK_STATUS_ENTITY_URL, false);
+        $response = $this->client->callAPI('GET', ArrivyClient::TASK_ENTITY_URL . "/" . $task_id . ArrivyClient::TASK_STATUS_ENTITY_URL, false);
         // api result
         return $response;
     }
@@ -33,9 +35,10 @@ class TaskStatus
      * @param $taskstatus_id
      * @return json array
      */
-    public function GetById($task_id,$taskstatus_id){
+    public function GetById($task_id, $taskstatus_id)
+    {
         // call callAPI  method from ArrivyClient class
-        $response = $this->client->callAPI('GET', ArrivyClient::TASK_ENTITY_URL . "/" . $task_id.ArrivyClient::TASK_STATUS_ENTITY_URL."/".$taskstatus_id, false);
+        $response = $this->client->callAPI('GET', ArrivyClient::TASK_ENTITY_URL . "/" . $task_id . ArrivyClient::TASK_STATUS_ENTITY_URL . "/" . $taskstatus_id, false);
         // api result
         return $response;
     }
@@ -45,9 +48,10 @@ class TaskStatus
      * @param $task_id
      * @return json array
      */
-    public function Create(array $payload,$task_id){
+    public function Create(array $payload, $task_id)
+    {
         // call callAPI  method from ArrivyClient class
-        $response = $this->client->callAPI('POST', ArrivyClient::TASK_ENTITY_URL."/".$task_id.ArrivyClient::TASK_STATUS_ENTITY_URL.ArrivyClient::ACTION_NAME_NEW, $payload);
+        $response = $this->client->callAPI('POST', ArrivyClient::TASK_ENTITY_URL . "/" . $task_id . ArrivyClient::TASK_STATUS_ENTITY_URL . ArrivyClient::ACTION_NAME_NEW, $payload);
         // api result
         return $response;
     }
@@ -58,9 +62,10 @@ class TaskStatus
      * @param $taskstatus_id
      * @return json array
      */
-    public function Update(array $payload ,$task_id,$taskstatus_id){
+    public function Update(array $payload, $task_id, $taskstatus_id)
+    {
         // call callAPI  method from ArrivyClient class
-        $response = $this->client->callAPI('PUT',ArrivyClient::TASK_ENTITY_URL."/".$task_id.ArrivyClient::TASK_STATUS_ENTITY_URL."/".$taskstatus_id, $payload);
+        $response = $this->client->callAPI('PUT', ArrivyClient::TASK_ENTITY_URL . "/" . $task_id . ArrivyClient::TASK_STATUS_ENTITY_URL . "/" . $taskstatus_id, $payload);
         // api result
         return $response;
     }
@@ -70,10 +75,12 @@ class TaskStatus
      * @param $taskstatus_id
      * @return json array
      */
-    public function Delete($task_id,$taskstatus_id){
+    public function Delete($task_id, $taskstatus_id)
+    {
         // call callAPI  method from ArrivyClient class
-        $response = $this->client->callAPI('DELETE',ArrivyClient::TASK_ENTITY_URL."/".$task_id.ArrivyClient::TASK_STATUS_ENTITY_URL."/".$taskstatus_id, false);
+        $response = $this->client->callAPI('DELETE', ArrivyClient::TASK_ENTITY_URL . "/" . $task_id . ArrivyClient::TASK_STATUS_ENTITY_URL . "/" . $taskstatus_id, false);
         // api result
         return $response;
     }
 }
+

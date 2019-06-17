@@ -1,11 +1,11 @@
 <?php
+
 require_once('Tasks.php');
 require_once('TaskStatus.php');
 require_once('Entity.php');
 require_once('Resource.php');
 require_once('Group.php');
 require_once('Template.php');
-
 class ArrivyClient
 {
     // define the base path
